@@ -1,84 +1,103 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
     <title>Federal Nuclear Development Center</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <style>
-        .container h1, .container h2 {
-    margin-top: 20px;
-}
-
-.section {
-    padding: 80px 20px;
-}
-
-.card {
-    border: 1px solid #e5e5e5;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-}
-        body{
+        body {
             font-family: Arial, sans-serif;
         }
 
-        .hero{
-            background:#0b1f33;
-            color:white;
-            padding:100px 20px;
-            text-align:center;
+        /* HERO */
+        .hero {
+            background: linear-gradient(180deg, #0b1f33 0%, #091a2b 100%);
+            color: white;
+            padding: 100px 20px;
+            text-align: center;
         }
 
-        .section{
-            padding:60px 20px;
-        }
-
-        .navbar{
-            background:#0b1f33 !important;
+        /* NAVBAR */
+        .navbar {
+            background: #0b1f33 !important;
         }
 
         .navbar-brand,
-        .nav-link{
-            color:white !important;
+        .nav-link {
+            color: white !important;
         }
 
-        .btn-fndc{
-            background:#c9a54c;
-            color:white;
+        .navbar-dark .navbar-toggler-icon {
+            filter: invert(1);
+        }
+
+        /* SECTIONS */
+        .section {
+            padding: 60px 20px;
+        }
+
+        .container h1,
+        .container h2 {
+            margin-top: 20px;
+            margin-bottom: 15px;
+        }
+
+        /* CARDS */
+        .card {
+            border: 1px solid #e5e5e5;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+            transition: transform .2s ease, box-shadow .2s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+        }
+
+        /* BUTTONS */
+        .btn-fndc {
+            background: #c9a54c;
+            color: white;
+        }
+
+        .btn-fndc:hover {
+            background: #b08f3f;
+            color: white;
+        }
+
+        /* FOOTER */
+        footer {
+            background: #0b1f33;
+            color: white;
+            padding: 30px 0;
+            margin-top: 50px;
         }
     </style>
 </head>
 
 <body>
+
+<!-- TOP ALERT BAR -->
 <div class="text-center text-white py-1" style="background:#b00020; font-size:14px;">
     FEDERAL NUCLEAR DEVELOPMENT CENTER — PUBLIC ACCESS PORTAL
 </div>
-<nav class="navbar navbar-expand-lg">
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark">
     <div class="container">
 
         <a class="navbar-brand d-flex align-items-center" href="index.html">
+            <img src="seal.png" alt="FNDC Seal" width="45" height="45" class="me-2">
+            FNDC
+        </a>
 
-    <img src="seal.png"
-         alt="FNDC Seal"
-         width="45"
-         height="45"
-         class="me-2">
-
-    FNDC
-
-</a>
-
-        <button class="navbar-toggler"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarNav">
-
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
-
         </button>
 
-        <div class="collapse navbar-collapse"
-             id="navbarNav">
+        <div class="collapse navbar-collapse" id="navbarNav">
 
             <ul class="navbar-nav ms-auto">
 
@@ -113,141 +132,88 @@
     </div>
 </nav>
 
+<!-- HERO -->
 <section class="hero">
     <h1>Federal Nuclear Development Center</h1>
-
-    <p>
-        Advancing Strategic Nuclear Science,
-        Security, and Innovation
-    </p>
-
-    <button class="btn btn-fndc">
-        Learn More
-    </button>
+    <p>Advancing Strategic Nuclear Science, Security, and Innovation</p>
+    <button class="btn btn-fndc">Learn More</button>
 </section>
 
+<!-- MISSION -->
 <section class="section">
     <div class="container">
-
         <h2>Mission Statement</h2>
-
         <p>
-            The Federal Nuclear Development Center
-            serves as the nation's premier authority
-            for nuclear science, strategic deterrence
-            research, reactor development, and
+            The Federal Nuclear Development Center serves as the nation's premier authority
+            for nuclear science, strategic deterrence research, reactor development, and
             technological innovation.
         </p>
+    </div>
+</section>
+
+<!-- FEATURED DIRECTORATES -->
+<section class="section bg-light">
+    <div class="container">
+
+        <h2 class="mb-4">Featured Directorates</h2>
+
+        <div class="row">
+
+            <div class="col-md-4">
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h5>Strategic Systems</h5>
+                        <p>Advanced deterrence research, systems integration, and modernization.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h5>Reactor Technologies</h5>
+                        <p>Research and development of next-generation nuclear reactors.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h5>Materials Science</h5>
+                        <p>Advanced nuclear materials and scientific innovation initiatives.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
 
     </div>
 </section>
-    <section class="section bg-light">
 
-<div class="container">
-
-<h2 class="mb-4">
-Featured Directorates
-</h2>
-
-<div class="row">
-
-<div class="col-md-4">
-<div class="card mb-3">
-
-<div class="card-body">
-
-<h5>
-Strategic Systems
-</h5>
-
-<p>
-Advanced deterrence research,
-systems integration, and modernization.
-</p>
-
-</div>
-</div>
-</div>
-
-<div class="col-md-4">
-<div class="card mb-3">
-
-<div class="card-body">
-
-<h5>
-Reactor Technologies
-</h5>
-
-<p>
-Research and development of
-next-generation nuclear reactors.
-</p>
-
-</div>
-</div>
-</div>
-
-<div class="col-md-4">
-<div class="card mb-3">
-
-<div class="card-body">
-
-<h5>
-Materials Science
-</h5>
-
-<p>
-Advanced nuclear materials and
-scientific innovation initiatives.
-</p>
-
-</div>
-</div>
-</div>
-
-</div>
-
-</div>
-
+<!-- DIRECTOR MESSAGE -->
+<section class="section">
+    <div class="container">
+        <h2>Message From The Director</h2>
+        <p>
+            The Federal Nuclear Development Center remains committed to advancing nuclear science,
+            technological innovation, and strategic research in support of national security objectives.
+            Through scientific excellence, operational integrity, and responsible stewardship,
+            FNDC continues to serve as a leader in nuclear research and development.
+        </p>
+    </div>
 </section>
-    <section class="section">
 
-<div class="container">
-
-<h2>
-Message From The Director
-</h2>
-
-<p>
-The Federal Nuclear Development Center remains
-committed to advancing nuclear science,
-technological innovation, and strategic research
-in support of national security objectives.
-Through scientific excellence, operational
-integrity, and responsible stewardship,
-FNDC continues to serve as a leader in
-nuclear research and development.
-</p>
-
-</div>
-
-</section>
-    <footer style="background:#0b1f33; color:white; padding:30px 0; margin-top:50px;">
+<!-- FOOTER -->
+<footer>
     <div class="container text-center">
-
-        <p class="mb-1">
-            Federal Nuclear Development Center (FNDC)
-        </p>
-
-        <p class="mb-1" style="font-size:13px;">
-            Advancing nuclear science, safety, and strategic research
-        </p>
-
-        <p style="font-size:12px; opacity:0.8;">
-            This is an official RP simulation environment. Not a real government agency.
-        </p>
-
+        <p class="mb-1">Federal Nuclear Development Center (FNDC)</p>
+        <p class="mb-1" style="font-size:13px;">Advancing nuclear science, safety, and strategic research</p>
+        <p style="font-size:12px; opacity:0.8;">This is an official RP simulation environment. Not a real government agency.</p>
     </div>
 </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
